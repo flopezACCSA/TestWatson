@@ -6,24 +6,31 @@
     <title></title>
     <style type="text/css">
         
+        .style1
+        {
+            width: 723px;
+        }
+        
     </style>
 </head>
-<body>
-<form  id="a" runat="server">
-    <table id="C" runat="server" style="height: 231px; width: 329px">
+<body style="background-image: url(fondo.png); background-repeat: no-repeat; background-attachment: fixed;" > 
+<form id="a" runat="server">
+    <table id="C" runat="server">
         <tr>
-            <td>
-                <asp:TextBox ID="txtPregunta" Width="100%" runat="server"></asp:TextBox>
+            <td class="style1">
+                <asp:TextBox ID="txtPregunta" Width="99%" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
-            <td>
-                <asp:Button ID="Button1" runat="server" Width="100%"  OnClick="Button1_Click" Text="Preguntar" />
+            <td class="style1">
+                <asp:Button ID="Button1" runat="server" Width="99%"  OnClick="Button1_Click" 
+                    Text="Preguntar" />
             </td>
         </tr>
         <tr>
-            <td>
-                <asp:TextBox ID="txtResult" runat="server" Height="384px" TextMode="MultiLine" Width="667px"></asp:TextBox>
+            <td class="style1">
+                <asp:TextBox ID="txtResult" runat="server" Height="384px" TextMode="MultiLine" 
+                    Width="220px" Visible="False"></asp:TextBox>
             </td>
         </tr>
     </table>
